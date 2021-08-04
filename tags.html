@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Decathlon Social</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/decathlon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <!-- NAVBAR LEFT -->
+        <div class="navbarLeft">
+            <img class="siteLogo" src="img/decathlon.png" alt="Site Logo" />
+        </div>
+
+        <!-- CENTER NAVBAR -->
+        <nav class="navbar_center">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="social.html">
+                <i class="fas fa-user-friends"></i>
+            </a>
+            <a class="active_icon" href="tags.html">
+                <i class="fas fa-tags"></i>
+            </a>
+            <a href="index.html">
+                <i class="fas fa-users"></i>
+            </a>
+        </nav>
+
+        <!-- RIGHT NAVBAR -->
+        <div class="navbar_right">
+
+            <div class="navbar_right_profile">
+                <img src="img/pp.jpg" alt="profile" />
+            </div>
+
+            <div class="navbar_right_links">
+                <i class="fas fa-plus"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fas fa-bell"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- CONTENT -->
+    <div class="content">
+        <!-- CONTENT LEFT -->
+        <div class="contentLeft">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/pp.jpg" alt="Profile Photo" />
+                        <span>Başar Ballıöz</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="social.html">
+                        <img src="img/friends.png" alt="Social Logo" />
+                        <span>Show User List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tags.html">
+                        <img src="img/tag.png" alt="Tags Logo" /> <span>Popular Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/groups.png" alt="Groups Logo" /> <span>Groups</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/videos.png" alt="Videos Logo" /> <span>Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/events.png" alt="Events Logo" /> <span>Events</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/memories.png" alt="Memories Logo" />
+                        <span>Memories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/market.png" alt="Marketplace Logo" />
+                        <span>Marketplace</span>
+                    </a>
+                </li>
+                <div class="divider"></div>
+                <h3 class="shortcut_title">Most Popular Tags</h3>
+                <div class="wrapper" id="tags">
+
+
+                </div>
+            </ul>
+        </div>
+
+        <!-- POST PAYLASMA KISMI -->
+        <div class="content_center">
+            <div class="media_container">
+                <!-- TAG LIST  -->
+
+
+                <div class="tags">
+                    <table class="hashtagTable" id="tagsPage">
+                        <tr>
+                            <th>Most Popular Tags</th>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- CONTENT RIGHT -->
+        <div class="contentRight">
+            <div class="contentRightArea">
+                <div class="pagesArea">
+                    <h3>Your Pages</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="pageLogo" src="img/decathlon.png" alt="Page Image" />
+                            <span>Decathlon Sports</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class="divider"></div>
+
+                <div class="contacts">
+                    <h3>Contacts</h3>
+                    <div class="contact_icons">
+                    </div>
+
+                </div>
+                <div id="contact-list">
+                    <ul></ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,814 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Segoe UI";
+  box-sizing: border-box;
+  background: #18191a;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #242526;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 0 20px 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.4);
+}
+
+.navbarLeft {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.siteLogo {
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .siteLogo {
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+}
+
+.icon {
+  padding: 13px 10px;
+  color: #a8abaf;
+  text-align: center;
+  min-width: 20px;
+  margin-right: 20px;
+}
+
+.input-field {
+  padding: 14px 0 13px 30px;
+  width: 50%;
+  border: none;
+  border-radius: 25px;
+  background: #414040;
+  font-size: 15px;
+  color: #aaacad;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #a4a5a7;
+}
+
+.navbar_center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.navbar_center a {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar_center a {
+    margin: 0px 8px;
+  }
+}
+
+.navbar_center a:hover {
+  background: #3a3b3c;
+  border-radius: 10px;
+  height: 55px;
+  border: none;
+}
+
+.active_icon {
+  border-bottom: 3px solid #2d88ff;
+}
+.active_icon i {
+  color: #2d88ff !important;
+}
+
+.navbar a,
+.navbar a i {
+  text-decoration: none;
+  color: #b8bbbf;
+  font-size: 23px;
+}
+
+/* NAVBAR RIGHT */
+.navbar_right {
+  width: 25%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* SAG NAVBARI TELEFONDA GOSTERME */
+@media only screen and (max-width: 1100px) {
+  .navbar_right {
+    display: none;
+  }
+}
+
+.navbar_right_profile {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-right: 20px;
+  transition: 0.2s;
+}
+
+.navbar_right_profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.navbar_right_profile span {
+  color: #e7e9ed;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar_right_links i {
+  margin-right: 5px;
+  cursor: pointer;
+  background: #404041;
+  padding: 12px;
+  color: #e7e9ed;
+  border-radius: 100%;
+  font-size: 16px;
+}
+
+.navbar_right_links i:hover {
+  background: #7e7f80;
+}
+
+/* CONTENT CSS */
+.content {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    justify-content: flex-start;
+  }
+}
+
+/* CONTENT LEFT */
+.contentLeft {
+  position: fixed;
+  background: transparent;
+  left: 0;
+  top: 5rem;
+  width: 25%;
+  height: 100vh;
+  padding-left: 10px;
+}
+
+.contentLeft ul li :hover {
+  background: #8d9399;
+  border-radius: 30px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contentLeft {
+    display: none;
+  }
+}
+
+.content_center {
+  text-align: center;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content_center {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content_center {
+    width: 100%;
+  }
+}
+
+.divider {
+  margin-left: 20px;
+  width: 400px;
+  border-style: solid;
+  border-color: rgba(53, 53, 53, 0.664);
+  border-width: 1px;
+}
+
+.contentLeft ul {
+  margin: 0;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.contentLeft ul li {
+  padding: 0 15px;
+  margin-bottom: 14px;
+}
+
+.contentLeft ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #e7e9ed;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.contentLeft ul li i {
+  background: #404041;
+  padding: 10px;
+  border-radius: 100%;
+  color: #e7e9ed;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.contentLeft ul li a img {
+  width: 45px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.shortcut_title {
+  margin: 15px 20px;
+  color: #e7e9ed;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+.wrapper a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e7e9ed;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.wrapper a:hover {
+  font-size: 30px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.pageLogo {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+/* HASHTAG PAGE CSS */
+.hashtagTable {
+  width: 95%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+}
+
+.hashtagTable tbody tr td {
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+
+#profiles td {
+  text-align: left;
+  padding: 5px;
+  color: white;
+}
+
+/* FULL PROFIL KISMI */
+.profileSection {
+  display: flex;
+  position: relative;
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 200px 0px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1100px) {
+  .profileSection {
+    padding: 300px 0px;
+  }
+  .fullProfileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fullProfileImg {
+    margin-bottom: 10px;
+  }
+  .fullProfileSection img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.fullProfileSection ul li:nth-child(4) {
+  text-transform: capitalize;
+}
+
+/* PROFILDEN ANASAYFAYA DONUS */
+.returnToHome a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ee4e0f;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.returnToHome a:hover {
+  background-color: rgb(221, 28, 28);
+  transition: background-color 0.5s;
+}
+
+/* SOCIAL CENTER */
+.socialCenter {
+  display: flex;
+  position: relative;
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 2900px 0px;
+  z-index: -1;
+}
+
+/* SOCIAL CENTER TABLO AYARLARI */
+.socialTable {
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .socialTable tbody tr td ul li {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .socialProfile {
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+  }
+  #profiles td {
+    border-bottom: none;
+  }
+
+  #hrForMobile {
+    width: 90%;
+  }
+
+  .socialCenter {
+    padding: 3300px 170px;
+  }
+}
+
+.socialTable tr td {
+  display: flex;
+  margin: 10px 5px;
+}
+
+.socialTable tr td ul {
+  list-style-type: none;
+}
+
+.socialTable tr td ul li:nth-child(1) {
+  text-transform: capitalize;
+  margin-top: 2px;
+}
+
+.socialTable tr td img {
+  display: block;
+}
+
+.socialTable ul li {
+  font-size: 18px;
+}
+
+.socialProfile {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.fullProfileImg {
+  width: 250px;
+  height: 250px;
+}
+
+/* KISISELLESTIRILMIS HR TAG */
+#hrForMobile {
+  width: 95%;
+}
+
+/* CONTENT CENTER */
+.media_container {
+  padding: 5px 15px;
+}
+
+.tags {
+  position: relative;
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 300px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .tags {
+    padding: 350px 0px;
+  }
+}
+
+.fullProfile {
+  position: relative;
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 300px;
+}
+
+.share {
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.sharePost {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sharePost img {
+  margin-right: 8px;
+  width: 45px;
+  border-radius: 25px;
+}
+
+.sharePost input {
+  flex: 1;
+  padding: 10px 0 10px 10px;
+  background: #3a3b3c;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  color: #a0a2a3;
+}
+
+.sharePost input:focus {
+  outline: none;
+}
+
+/* POSTLAR ARASI HR TAG */
+.media_container hr {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.shareButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  height: 40px;
+}
+
+.shareButtonText {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shareButtonText:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8d9399;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.shareButtonText i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.shareButtonText span {
+  color: #b7babe;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.live-video-icon {
+  color: #f23e5c;
+}
+
+.photo-video-icon {
+  color: #58c472;
+}
+
+.feeling-icon {
+  color: #f8c03e;
+}
+
+.news_feed {
+  margin: 15px 0;
+}
+
+.post-container {
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background-color: #242526;
+}
+
+.news_feed_title {
+  padding: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.news_feed_title img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 7px;
+}
+
+.news_feed_title_content {
+  text-align: left;
+}
+
+.news_feed_title_content p {
+  color: #e4e6eb;
+  font-weight: 500;
+}
+
+.news_feed_title_content span {
+  color: #b7babe;
+  font-size: 12px;
+}
+
+/* POST KISMI */
+.postOwner {
+  margin: 0px;
+  cursor: pointer;
+}
+
+.postDivider {
+  padding: 0 15px 0 15px;
+}
+
+.news_feed_subtitle {
+  color: #e4e6eb;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.news_feed_description img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.news_feed_description_title {
+  margin-top: -5px;
+  padding: 10px 15px;
+  background-color: #3a3b3c;
+  text-align: left;
+}
+
+.news_feed_description_title span {
+  color: #b7babe;
+  font-size: 13px;
+}
+
+.news_feed_description_title p {
+  font-weight: 500;
+  color: #e4e6eb;
+  font-size: 15px;
+}
+
+.interactionArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.postTags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: #398fe0;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+}
+
+.emojis img {
+  width: 25px;
+  margin-right: -3px;
+}
+
+.emojis span {
+  color: #b7babe;
+  margin-left: 10px;
+}
+
+.show-profile {
+  color: #c5c7ca;
+  font-size: 18xp;
+  cursor: pointer;
+}
+
+/* POST BEGENI-YORUM-PAYLASMA KISMI */
+.interactionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  height: 45px;
+}
+
+.interactionButtons-icons {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b4b7bb;
+  font-weight: 500;
+}
+
+.interactionButtons-icons:hover {
+  background: #3a3b3c;
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactionButtons-icons i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* MENU - SAG TARAF  */
+.contentRightArea {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.pagesArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a1a4a9;
+  margin: 15px 0;
+}
+
+.pagesArea h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* CONTENT RIGHT KISMI */
+.contentRight {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  top: 5rem;
+  right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .contentRight {
+    display: none;
+  }
+}
+
+.contentRight ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contentRight ul li {
+  margin-bottom: 15px;
+}
+
+.contentRight ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.contentRight ul li a img {
+  width: 38px;
+  border-radius: 100%;
+  margin-right: 12px;
+}
+
+/* CONTACTS KISMI */
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a1a4a9;
+  margin: 15px 0;
+}
+
+.contacts i {
+  margin-left: 16px;
+}
+
+.contacts h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
